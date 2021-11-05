@@ -21,6 +21,10 @@ ul {
 }
 h1 {font-size: 38px;}
 
+.banner {
+  color: #FFF;
+}
+
 #intro h1 {
     text-transform: uppercase;
 }
