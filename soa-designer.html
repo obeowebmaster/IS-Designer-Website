@@ -7,8 +7,8 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
     <div class="container">
             {% include block_heading.html
                 title="Service Oriented Architecture Designer"                
-                sub_title="Lorem Ipsum"
-                desc="Lorem Ipsum"
+                sub_title="Modéliser les interfaces des composants et des services"
+                desc="SOA Designer permet de modéliser la façon dont les composants d'une application sont liés entre eux, au travers d'interfaces de services."
             %}
     </div>
 </section>
@@ -21,59 +21,15 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
             desc=""
         %}
 
-    <div class="row">
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Meilleure réponse aux besoins utilisateurs" 
-            desc="Une <a href=\"\">analyse métier</a> plus efficace permet de produire une application en phase avec les attentes des utilisateurs"
-            href=""
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Approche visuelle et innovante" 
-            desc="Une schéma vaut mieux qu'un long discours : les diagrammes permettent de mieux réfléchir en restant focalisé sur l'essentiel."
-            href=""
-            target="_blank"
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Spécifications précises et fiables" 
-            desc="A chaque sprint, les user stories sont actualisées dans un format structuré pour une meilleure maîtrise des spécifications"
-            href=""
-            target="_blank"
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Collaboration entre analystes et concepteurs" 
-            desc="Les analystes métiers et les concepteurs (front-end et back-end) collaborent sur une vision partagée de l’application"
-            href="http://www.eclipse.org/sirius/doc/"
-            link_txt=""
-            href_icon=""
-        %}
-    </div>
-    </div>
-</section>
 
 <section id="">
     <div class="container">
         {% include block_text_image.html
             txt_order="order-1"
             title="Modéliser des interfaces de composants applicatifs"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            desc="<p>L’architecture orientée services rend les composants logiciels réutilisables par le biais d’interfaces de services qui communiquent entre-eux.</p>
+            <p>SOA Designer permet la représentation de ces services et des fonctionnalités des composants. Vous pouvez définir les opérations que vos services peuvent effectuer, en précisant leurs paramètres d’entrée, de sortie, et les comportements à adopter en cas d’erreur.</p>
+            <p>Vous pouvez également définir l’exposition de vos services via des protocoles de réseau standards (SOAP, REST) afin d’envoyer des requêtes ou accéder à vos données.</p>"
         
             lnk_txt=""
             lnk_href=""
@@ -82,7 +38,7 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
 
             img_order="order-2"
             img_src="images/screenshots/soa/interface_composants.png"
-            img_title="Information System Designer - What is Information System Designer?"
+            img_title="Diagramme d'interfaces de composants"
         %}
     </div>
 </section>
@@ -92,7 +48,8 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
         {% include block_text_image.html
             txt_order="order-2"
             title="Rétro-modéliser des interfaces de services REST"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            desc="<p>SOA Designer vous permet d’importer des services REST existants en format OpenAPI 3.0. Vous pouvez ainsi utiliser les différentes représentations graphiques proposées ainfi de faire évoluer vos composants applicatifs.</p> 
+            <p>La rétro-modélisation considère toutes les fonctionnalités apportées par OpenAPI: extensions de propriétés, schémas de sécurité, types de médias, ainsi que les serveurs.</p>"
         
             lnk_txt=""
             lnk_href=""
@@ -111,7 +68,8 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
         {% include block_text_image.html
             txt_order="order-1"
             title="Modéliser les liens entre composants"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            desc="<p>SOA Designer vous permet de représenter les composants de votre application. Ces composants peuvent fournir des comportements (services) ou bien les consommer.</p>
+            <p>Vous pouvez ainsi lier entre-eux vos services définissant des relations de dépendances entre les services fournis et consommés de vos composants, vous donnant ainsi une vue d’ensemble de votre application.</p>"
         
             lnk_txt=""
             lnk_href=""
@@ -120,7 +78,7 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
 
             img_order="order-2"
             img_src="images/screenshots/soa/liens_entre_composants.png"
-            img_title="Information System Designer - What is Information System Designer?"
+            img_title="Liens entre composants"
         %}
     </div>
 </section>
@@ -130,7 +88,9 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
         {% include block_text_image.html
             txt_order="order-2"
             title="Générer des documents OpenAPI définissant des services REST"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            desc="<p>SOA Designer permet également l’export de vos services REST en format OpenAPI 3.0, vous permettant de générer directement vos applications côté serveur.</p>
+                <p>Les objets métiers associés à vos services REST sont égalements considérés lors de l’export, afin de simplifier les transferts de données avec les autres couches de votre application.</p>
+                <p>En associant ces fonctions d’export à celles d’import, SOA Designer permet la mise en place de Round-Trip engineering afin de faire évoluer facilement et rapidement vos applications existantes.</p>"
         
             lnk_txt=""
             lnk_href=""
@@ -139,7 +99,7 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
 
             img_order="order-1"
             img_src="images/screenshots/soa/generation_openapi.gif"
-            img_title="Information System Designer - Modéliser les user-stories"
+            img_title="Génération de documents OpenAPI"
         %}
     </div>
 </section>
@@ -148,7 +108,8 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
         {% include block_text_image.html
             txt_order="order-1"
             title="Modéliser des objets métiers et des DTOs"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            desc="<p>Les DTOs sont des objets transportant les données entre les différentes couches d’une application. SOA Designer propose une représentation s'apparentant à UML afin de les modéliser. </p>
+                <p>Ces DTOs peuvent être directement référencés par les différents services de vos composants. Les DTOs étant échangés entre les processus de votre application, ils peuvent être générés à partir d’autres représentations  issues de différentes couches applicatives (Graal Designer, Entity Designer).</p>"
         
             lnk_txt=""
             lnk_href=""
@@ -157,7 +118,7 @@ title: Information System Designer | Fonctionnalités - Service Oriented Archite
 
             img_order="order-2"
             img_src="images/screenshots/soa/objets_metier_dto.png"
-            img_title="Information System Designer - What is Information System Designer?"
+            img_title="Modélisation d'objets métiers"
         %}
     </div>
 </section>
