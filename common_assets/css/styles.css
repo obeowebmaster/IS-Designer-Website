@@ -10,6 +10,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+.banner {
+ color:#FFF;
+}
+
 p {
   line-height: 22px;
   font-size: 16px;

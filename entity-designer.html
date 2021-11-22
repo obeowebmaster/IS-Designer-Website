@@ -1,0 +1,78 @@
+---
+layout: isdesigner_default
+title: Information System Designer | Fonctionnalités - Entity Designer
+---
+
+<section id="" class="text-center">
+    <div class="container">
+            {% include block_heading.html
+                title="Entity Designer"                
+                sub_title="Modéliser les structures de données"
+                desc="Entity Designer permet de modéliser les entités de données et leur mapping avec les objets métiers et la base de données."
+            %}
+    </div>
+</section>
+
+
+<section id="">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Modéliser des entités de données"                
+            desc="<p>Avec une sémantique proche de celle de UML, vous pouvez utiliser Entity Designer pour modéliser la structure de vos données, indépendamment de la manière avec laquelle elles sont stockées.</p>
+              <p>Les aspects relatifs au stockage n’impactant donc pas la conception de vos entités de données, elles peuvent évoluer plus facilement, et parallèlement à votre application.</p>
+              <p>Avec Entity Designer, définissez simplement les entités de données utilisée par votre application, leurs propriétés, et les relations entres-elles.</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/entity/entite_donnees.png"
+            img_title="Diagramme d'interfaces de composants"
+        %}
+    </div>
+</section>
+
+<section id="">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Gérer le mapping avec les objets métiers"                
+            desc="<p>Avec Entity Designer, vous pouvez créer vos entités de données à partir d’objets métiers et de DTOs. Les objets échangés par vos services peuvent ainsi servir de source à la créations de vos entités de données.</p>
+              <p>Les relations et attributs sont aussi importés, et les entités peuvent ainsi être modifiés indépendamment de vos objets métiers. Réciproquement, vos objets métiers peuvent être générés à partir de vos entités de données.</p>
+              <p>Entity Designer propose également une modélisation du mapping entre vos entités de données et vos objets métiers dans un objectif de traçabilité.</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/screenshots/entity/mapping_metier.gif"
+            img_title="Mapping entre objets métiers et entités de données"
+        %}
+    </div>
+</section>
+
+<section id="">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Gérer le mapping avec la base de données"                
+            desc="<p>Bien que les entités de données modélisée par Entity Designer soient indépendantes de tout stockage de données, il vous est possible de générer le schéma de votre base de données relationnelle à partir d’un modèle d’entités.</p>
+                <p>Ce procédé, intitulé “Scaffolding”, génère un schéma de base de données relationnelle générique pouvant ensuite être utilisé dans le Database Designer.</p>
+                <p>Une représentation intermédiaire est créée lors du scaffolding, permettant de configurer ce mapping, et permettant de l’effectuer de manière incrémentale sur un schéma de base de données déjà créé.</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/entity/mapping_bdd.gif"
+            img_title="Liens entre composants"
+        %}
+    </div>
+</section>
