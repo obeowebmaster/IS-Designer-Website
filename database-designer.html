@@ -1,0 +1,195 @@
+---
+layout: isdesigner_default
+title: Information System Designer | Fonctionnalités - Database Designer
+---
+
+<section class="bg_lightest_grey text-center">
+    <div class="container">
+            {% include block_heading.html
+                title="Database Designer"
+                sub_title="Modéliser vos bases de données"
+                desc="Database Designer permet de modéliser (ou rétro-modéliser) une base de données, de générer les scripts correspondant et de gérer le mapping avec un modèle logique."
+            %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Modéliser une base de données relationnelle"
+            desc="<p>Avec Database Designer, vous pouvez modéliser la structure de vos bases de données relationnelles. La représentation graphique proposée vous permet de visualiser facilement les relations entre vos tables.</p>
+              <p>Un large choix de types de données vous est proposé. Vous pouvez utiliser des types logiques génériques, indépendants de votre SGBD, ou des types physiques spécifiques à un des SGBD géré par Database Designer: MySQL, Oracle SQL, H2, SQL Server, PostgreSQL, ou MariaDB.</p>"
+
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/database/modeliser_bdd_relationnelle.png"
+            img_title="Diagramme de tables relationnelles"
+        %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Générer des scripts de base de données"
+            desc="<p>Database Designer vous permet de générer des scripts SQL afin de créer dans votre SGBD le schéma de base de données modélisé. Le script SQL généré correspond au type de données physiques utilisé.</p>
+                <p>En plus des scripts SQL, Database Designer peut aussi générer des “changelogs” Liquibase, permettant ainsi le suivi, la gestion et l’application sur votre SGBD de changements du schéma.</p>
+                <p>Les scripts SQL et Liquibase peuvent également être générés de manière incrémentale. Ainsi il n’est pas nécessaire de recréer sur votre SGBD l’intégralité du schéma, mais seulement les éléments changés.</p>"
+
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/screenshots/database/generer_script_sql.gif"
+            img_title="Génération de scripts SQL"
+        %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Rétro-modéliser des bases de données existantes"
+            desc="<p>Vous pouvez également importer dans Database Designer des schémas de base de données déployés sur votre SGB. Le connecteur de Database Designer se connecte à votre base et en extrait automatiquement le schéma.</p>
+                <p>Ainsi, vous pouvez faire évoluer le schéma de votre base de données en utilisant l’éditeur de Database Designer. Vous pouvez ainsi générer le script SQL correspondant aux changements effectués dans le modeleur, et mettre à jour le schéma de votre base de données déployée en conséquence.</p>
+                <p>Associée à la génération incrémentale de scripts SQL, cette rétro-modélisation s’inscrit dans un cycle de round-trip engineering, permettant de faire évoluer efficacement votre base de données.</p>"
+
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/database/reverse_engineering.gif"
+            img_title="Rétro-modélisation de bases de données"
+        %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Générer un modèle logique de données (MPD -> MLD)"
+            desc="<p>Database Designer permet de générer, à partir d’un schéma de base de données spécifique à un SGBD, un schéma générique. Les types de données physiques, dépendants du SGBD, sont ainsi remplacés par des types génériques.</p>
+                <p>Ce modèle de base de données générique peut ainsi être associé à Entity Designer. Des entités de données peuvent être automatiquement générées, modifiées, et ré-importées dans ce modèle de base de données.</p>"
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/screenshots/database/MPD-To-MLD.gif"
+            img_title="Générer un modèle logique de données"
+        %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Générer un schéma de base de données (MLD -> MPD)"
+            desc="<p>Vous pouvez générer un modèle physique de base de données correspondant à votre SGBD à partir d’un modèle générique de base de données.</p>
+                <p>Avec Database Designer vous pouvez ainsi utiliser un modèle logique de base de données comme pivot, afin de faire migrer une base de données physique d’un SGBD vers un autre.</p>
+                <p>Également, le modèle logique de données, et son mapping avec des objets métiers, peut être utilisé pour faire évoluer votre schéma plus simplement.</p>"
+
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/database/MLD-to-MPD.gif"
+            img_title="Générer un schéma de base de données"
+        %}
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Gérer le mapping avec les objets métiers"
+            desc="<p>Database Designer permet de mapper votre modèle logique de base de données vers un modèle d’entité de données, indépendant du stockage des données.</p>
+                <p>Ce mapping est simple d’utilisation et permet ainsi de modifier votre schéma de base de données relationnelle en  utilisant le modeleur de Entity Designer.</p>
+                <p>Enfin, ce mapping peut servir de passerelle vers les autres couches métiers proposées dans IS Designer.</p>"
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/screenshots/database/mapping.gif"
+            img_title="Gérer le mapping entre la base de données et les objets métiers"
+        %}
+    </div>
+</section>
+<section class="bg_lightest_grey text-center">
+    <div class="container">
+        {% include block_heading.html
+            title="Ressources pour démarrer"
+            sub_title=""
+            desc=""
+        %}
+            <div class="row">
+                {% include block_cols.html
+                    col="4 offset-md-2"
+                    icon_name="far fa-file-alt"
+                    icon_color="txt_indigo"
+                    title="Documentation" 
+                    desc=""
+                    href="https://github.com/ObeoNetwork/InformationSystem/wiki/Obeo-Network---Base-de-donnees-et-Scaffolding"
+                    link_txt="Learn more"
+                    href_icon="fas fa-arrow-alt-circle-right"
+                %}
+                {% include block_cols.html
+                    col="4"
+                    icon_name="far fa-file-alt"
+                    icon_color="txt_indigo"
+                    title="Téléchargement" 
+                    desc=""
+                    href="https://github.com/ObeoNetwork/InformationSystem/releases"
+                    link_txt="Learn more"
+                    href_icon="fas fa-arrow-alt-circle-right"
+                %}
+            </div>
+    </div>       
+</section>
+
+<!-- <div class="card banner bg-dark text-white text-center">
+    <img src="images/banners/banner_features.jpg" class="card-img" alt="Fonctionnalités">
+    <div class="container card-img-overlay">
+        <section>
+        {% include block_heading.html
+            title="Voir aussi"
+            sub_title=""
+            desc=""
+        %}
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".05s">
+                <h3>Requirements Designer</h3>
+                <p><a href="requirements-designer.html">Modéliser les exigences liées à l’application <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".09s">
+                <h3>Graal Designer</h3>
+                <p><a href="graal-designer.html">Modéliser les besoins utilisateurs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".11s">
+                <h3>SOA Designer</h3>
+                <p><a href="soa-designer.html">Modéliser les interfaces de composants applicatifs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+</div> -->

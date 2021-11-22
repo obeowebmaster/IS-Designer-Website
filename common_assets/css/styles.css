@@ -10,6 +10,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+.banner {
+ color:#FFF;
+}
+
 p {
   line-height: 22px;
   font-size: 16px;
@@ -184,10 +189,13 @@ section {
   border-bottom: 4px solid #261e58;
   padding-bottom: 4px;
 }
-#top-bar .main-menu > li > a:hover {
+#top-bar .main-menu li#dwnld > a:focus, #top-bar .main-menu > li > a:hover, #top-bar .main-menu > li > a.dropdown-item:focus, #top-bar .main-menu li a.dropdown-item:hover {
   background: transparent;
 }
-#top-bar .main-menu li a {
+#top-bar .main-menu li.active a.dropdown-item:hover {
+  border-bottom: 4px solid transparent;
+}
+#top-bar .main-menu li a, #top-bar .main-menu li a.dropdown-item {
   font-size: 14px;
   font-weight: 500;
   border-bottom: 4px solid transparent;
@@ -199,14 +207,14 @@ section {
   display: block;
   color: #261e58;
 }
-#top-bar .main-menu li a:hover, #top-bar .main-menu li#dwnld > a {
+#top-bar .main-menu ul.dropdown-menu.show li a, #top-bar .main-menu li#dwnld:hover a {
+  color: #fff;
+}
+#top-bar .main-menu li a:hover, #top-bar .main-menu ul.dropdown-menu.show li a:hover, #top-bar .main-menu li#dwnld > a {
   color: #FBB800;
 }
 #top-bar .main-menu li.active a:hover {
   border-bottom: 4px solid #FBB800;
-}
-#top-bar .main-menu li#dwnld > a:focus {
-background-color: transparent;
 }
 #top-bar .main-menu > li#dwnld {
   background-color: #261e58;
@@ -230,22 +238,12 @@ background-color: transparent;
   right: auto;
   left: 0;
 }
-.dropdown-menu > ul, .dropdown-menu .show ul {
-  background-color: #261e58;
-}
 .nav .open > a,
 .nav .open > a:focus {
   background-color: transparent;
 }
-#top-bar .dropdown-menu > ul > li > a {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-  padding: 8px 0;
-  color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+#top-bar .main-menu ul.dropdown-menu.show {
+  background-color: #261e58;
 }
 #top-bar .dropdown-item.active {
   font-weight: 500;
@@ -638,11 +636,6 @@ margin-top: 20px;
 }
 /* Responsive
 ------------- */
-@media only screen and (min-width: 1200px) {
-  #top-bar .main-menu li:first-child {
-    padding-left: 0px;
-  }
-}
 @media only screen and (max-width: 1199px) {
   body {
     padding-top: 142px !important;

@@ -3,7 +3,7 @@ layout: isdesigner_default
 title: Information System Designer | Fonctionnalités - Graal Designer
 ---
 
-<section id="" class="text-center">
+<section class="bg_lightest_grey text-center">
     <div class="container">
             {% include block_heading.html
                 title="Graal Designer"                
@@ -13,68 +13,15 @@ title: Information System Designer | Fonctionnalités - Graal Designer
     </div>
 </section>
 
-<section id="" class="bg_lightest_grey text-center">
-    <div class="container">
-        {% include block_heading.html
-            title=""                
-            sub_title=""
-            desc=""
-        %}
 
-    <div class="row">
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Meilleure réponse aux besoins utilisateurs" 
-            desc="Une <a href=\"\">analyse métier</a> plus efficace permet de produire une application en phase avec les attentes des utilisateurs"
-            href=""
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Approche visuelle et innovante" 
-            desc="Une schéma vaut mieux qu'un long discours : les diagrammes permettent de mieux réfléchir en restant focalisé sur l'essentiel."
-            href=""
-            target="_blank"
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Spécifications précises et fiables" 
-            desc="A chaque sprint, les user stories sont actualisées dans un format structuré pour une meilleure maîtrise des spécifications"
-            href=""
-            target="_blank"
-            link_txt=""
-            href_icon=""
-        %}
-        {% include block_cols.html
-            col="3"
-            icon_name="far fa-file-alt"
-            icon_color="txt_indigo"
-            title="Collaboration entre analystes et concepteurs" 
-            desc="Les analystes métiers et les concepteurs (front-end et back-end) collaborent sur une vision partagée de l’application"
-            href="http://www.eclipse.org/sirius/doc/"
-            link_txt=""
-            href_icon=""
-        %}
-    </div>
-    </div>
-</section>
-
-<section id="">
+<section>
     <div class="container">
         {% include block_text_image.html
             txt_order="order-1"
             title="Modéliser les use-cases et les acteurs"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
-        
+            desc="<p>Une application permet à des utilisateurs de dérouler des scénarios d’usage pour réaliser des objectifs métier.</p>
+                <p>Avec Graal Designer, définissez facilement ces scénarios sous la forme de cas d’usage (use-case) et de profils d’utilisateurs (acteurs) qui les réalisent.</p>
+                <p>Ces cas d’usage peuvent être définis de manière hiérarchique pour préciser les différents scénarios. De même pour les acteurs afin d’identifier des profils différents.</p>"
             lnk_txt=""
             lnk_href=""
             lnk_target=""
@@ -87,13 +34,14 @@ title: Information System Designer | Fonctionnalités - Graal Designer
     </div>
 </section>
 
-<section id="">
+<section>
     <div class="container">
         {% include block_text_image.html
             txt_order="order-2"
             title="Décomposer les use-cases en tâches"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
-        
+            desc="<p>Les cas d’usage peuvent être décomposés en ensembles de tâches. Ces tâches peuvent être ordonnées et hiérarchisées afin d’établir des scénarios d’utilisations de manière exhaustive.</p>
+                <p>Vous pouvez associer vos acteurs à des sous-tâches particulières, afin de représenter leurs implications durant les différentes étapes de vos processus métier.</p>
+                <p>Graal Designer permet d’intégrer un ensemble de tâches à des scénarios d’usage existants, de les partager entre plusieurs scénarios, et de naviguer entre-elles avec simplicité.</p>"       
             lnk_txt=""
             lnk_href=""
             lnk_target=""
@@ -101,37 +49,38 @@ title: Information System Designer | Fonctionnalités - Graal Designer
 
             img_order="order-1"
             img_src="images/screenshots/graal/taches.png"
-            img_title="Information System Designer - What is Information System Designer?"
+            img_title="Diagramme de use-cases"
         %}
     </div>
 </section>
 
-<section id="">
+<section>
     <div class="container">
         {% include block_text_image.html
             txt_order="order-1"
             title="Modéliser les interactions système/utilisateur"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
-        
+            desc="<p>Graal Designer permet la représentation des échanges entre les utilisateurs et les différents composants du système. Vous pouvez ainsi représenter les messages transitants dans le systèmes, entre ses composants mais aussi entre ses acteurs.</p>
+                <p>Des scénarios d’utilisations avancés prenant en compte parallélisme, synchronisation, ainsi que la création et la destruction d’entités du système peuvent être spécifiés. </p>
+                <p>Graal Designer peut ainsi être associé aux autres designers présents dans le studio, permettant ainsi une liaison entre les différentes couches de votre application.</p>"        
             lnk_txt=""
             lnk_href=""
             lnk_target=""
             lnk_icon=""
 
             img_order="order-2"
-            img_src="images/screenshots/graal/interactions.png"
-            img_title="Information System Designer - What is Information System Designer?"
+            img_src="images/screenshots/graal/interaction.png"
+            img_title="Diagramme d'interactions"
         %}
     </div>
 </section>
 
-<section id="">
+<section>
     <div class="container">
         {% include block_text_image.html
             txt_order="order-2"
             title="Modéliser les user-stories"                
-            desc="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
-        
+            desc="<p>Les tâches définies avec Graal Designer peuvent être intégrées à des scénarios d’usage plus vastes, prenant aussi en compte les actions des utilisateurs, l’affichage d’écrans, ainsi que les actions devant être effectuées par votre système.</p>
+                <p>Les scénarios utilisateurs et les tâches définies dans Graal Designer peuvent être intégrées aux user-stories. Vous pouvez spécifier dans quelles conditions effectuer vos sous-tâches, en fonction de l’état du système et des actions de l’utilisateur.</p>"
             lnk_txt=""
             lnk_href=""
             lnk_target="blank"
@@ -139,28 +88,67 @@ title: Information System Designer | Fonctionnalités - Graal Designer
 
             img_order="order-1"
             img_src="images/screenshots/graal/user_stories.png"
-            img_title="Information System Designer - Modéliser les user-stories"
+            img_title="Diagramme de user-stories"
         %}
     </div>
 </section>
 
-<section id="" class="bg_lightest_grey text-center">
+<section class="bg_lightest_grey text-center">
     <div class="container">
         {% include block_heading.html
             title="Ressources pour démarrer"
             sub_title=""
             desc=""
         %}
-        <div class="row align-items-center">
-            <div class="col-md-4 offset-md-2 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
-                <p><a href="http://www.obeosoft.com" title="Logo Obeo" target="_blank"><i class="far fa-file-alt fa-7x"></i></a></p>
-                <p>Documentation</p>
+            <div class="row">
+                {% include block_cols.html
+                    col="4 offset-md-2"
+                    icon_name="far fa-file-alt"
+                    icon_color="txt_indigo"
+                    title="Documentation" 
+                    desc=""
+                    href="https://github.com/ObeoNetwork/InformationSystem/wiki/Obeo-Network---Graal-tooling"
+                    link_txt="Learn more"
+                    href_icon="fas fa-arrow-alt-circle-right"
+                %}
+                {% include block_cols.html
+                    col="4"
+                    icon_name="far fa-file-alt"
+                    icon_color="txt_indigo"
+                    title="Téléchargement" 
+                    desc=""
+                    href="https://github.com/ObeoNetwork/InformationSystem/releases"
+                    link_txt="Learn more"
+                    href_icon="fas fa-arrow-alt-circle-right"
+                %}
             </div>
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
-                <p><a href="https://www.thalesgroup.com/en" title="Logo Thales" target="_blank"><i class="fas fa-download fa-7x"></i></a></p>
-                <p>Téléchargement</p>
-            </div>
-        </div>
     </div>       
 </section>
 
+<!-- <div class="card banner bg-dark text-white text-center">
+    <img src="images/banners/banner_features.jpg" class="card-img" alt="Fonctionnalités">
+    <div class="container card-img-overlay">
+        <section>
+        {% include block_heading.html
+            title="Voir aussi"
+            sub_title=""
+            desc=""
+        %}
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".05s">
+                <h3>Requirements Designer</h3>
+                <p><a href="requirements-designer.html">Modéliser les exigences liées à l’application <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".09s">
+                <h3>Graal Designer</h3>
+                <p><a href="graal-designer.html">Modéliser les besoins utilisateurs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".11s">
+                <h3>SOA Designer</h3>
+                <p><a href="soa-designer.html">Modéliser les interfaces de composants applicatifs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+</div> -->
