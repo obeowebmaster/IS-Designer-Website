@@ -1,0 +1,201 @@
+---
+layout: isdesigner_default
+title: Information System Designer | Fonctionnalités - Vue d'ensemble
+---
+
+<section class="text-center">
+    <div class="container">
+            {% include block_heading.html
+                title="Fonctionnalités"                
+                sub_title="Un atelier de modélisation complet<br>pour concevoir vos applications de gestion"
+                desc="IS Designer est  un atelier de modélisation graphique et collaboratif<br>
+                qui couvre l’ensemble des besoins d’analyse et de conception d’applications de gestion :<br>
+                de la structure et de la cinématique des écrans jusqu’à la base de données,<br>
+                en passant par la couche de services et les objets métiers"
+            %}
+    </div>
+</section>
+
+<div class="card banner bg-dark text-white text-center">
+    <img src="images/banners/banner_features.jpg" class="card-img" alt="Fonctionnalités">
+    <div class="container card-img-overlay">
+        <section>
+        {% include block_heading.html
+            title="Un modeleur pour chaque étape de votre projet"
+            sub_title=""
+            desc=""
+        %}
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".05s">
+                <h3>Requirements Designer</h3>
+                <p><a href="requirements-designer.html">Modéliser les exigences liées à l’application <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".09s">
+                <h3>Graal Designer</h3>
+                <p><a href="graal-designer.html">Modéliser les besoins utilisateurs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".11s">
+                <h3>SOA Designer</h3>
+                <p><a href="soa-designer.html">Modéliser les interfaces de composants applicatifs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".05s">
+                <h3>Entity Designer</h3>
+                <p><a href="entity-designer.html">Modéliser les structures de données <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".09s">
+                <h3>Database Designer</h3>
+                <p><a href="database-designer.html">Modéliser une base de données relationnelle <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-delay=".11s">
+                <h3>Cinematic Designer</h3>
+                <p><a href="cinematic-designer.html">Modéliser vos IHMs <i class="fa fa-external-link" aria-hidden="true"></i></a></p> 
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+</div>
+
+<section class="bg_lightest_grey">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Représentations visuelles"                
+            desc="<p>Comme un dessin vaut mieux qu'un long discours, IS Designer permet de décrire visuellement les principaux aspects d'une application.</p>
+            <p>Plusieurs notations graphiques dédiées et les outils d'édition associés sont ainsi proposés pour spécifier des structures de données, des enchaînements ou encore la composition d'une IHM.</p>
+            <p>Derrière chaque élément d'un diagramme, les données correspondantes sont automatiquement créées et maintenues en cohérence.</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/screenshots/cinematic/cinematic.png"
+            img_title="Diagramme de cinématique applicative"
+        %}
+    </div>
+</section>
+
+<section  >
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Intégration des applications et bases de données existantes"                
+            desc="<p>Une nouvelle application fait généralement partie d'un système d'information composé de nombreuses autres applications.</p>
+            <p>Avec IS Designer, vous facilement vous intégrer avec les applications existantes en rétromodélisant automatiquement :
+            <ul>
+                <li>les schémas de bases de données via Liquibase</li>
+                <li>les services décrits avec le standard OpenAPI</li>
+            </ul>
+            </p>"
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/logos/logos-liquibase-openapi.png"
+            img_title="Liquibase et OpenAPI"
+        %}
+    </div>
+</section>
+
+<section  class="bg_lightest_grey">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Génération documentaire"                
+            desc="<p>Les diagrammes créés avec IS Designer ainsi que les données correspondantes peuvent être utilisés pour produire automatiquement des documents MS Word.</p>
+            <p>Ces documents peuvent être entièrement personnalisés (contenu et format) en adaptant les templates de documents M2Doc fournis avec IS Designer.</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/illustrations/sirius-overview.png"
+            img_title="Génération de documents avec M2Doc"
+        %}
+    </div>
+</section>
+
+<section >
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Génération automatique de code"                
+            desc="<p>&Agrave; partir des informations modélisées, il est également possible de générer une partie du code source deset des fichiers de configuration de l'application.</p>
+            <p>Des générateurs prêts à l'emploi existent pour cibler le langage Java. Mais grâce à la technologie Acceleo sur laquelle s'appuie IS Designer, il est possible de définir vos propres templates pour produire automatiquent du code pour tout autre type de langage."
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target="blank"
+            lnk_icon="fas fa-arrow-alt-circle-right"
+
+            img_order="order-1"
+            img_src="images/illustrations/acceleo_overview.png"
+            img_title="Génération de code avec Acceleo"
+        %}
+    </div>
+</section>
+
+<section  class="bg_lightest_grey">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Travail collaboratif"                
+            desc="<p>Compatible avec <a href=\" \">Obeo Designer Team</a>, Information System Designer peut être utilisé pour travailler à plusieurs simultanément sur les mêmes modèles, sans passer par un partage fastidieux et risqué de fichiers XMI :</p><ul><li>stockage des modèles sur un serveur partagé,</li><li>verrouillage automatique des éléments en cours de modification,</li><li>libération automatique des verrous après la sauvegarde des modifications,</li><li>rafraîchissement instantané des modèles permettant à chaque utilisateur de toujours travailler sur une version à jour.</li></ul>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/illustrations/obeodesigner-collaborate.png"
+            img_title="Obeo Designer Team"
+        %}
+    </div>
+</section>
+
+<section >
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-2"
+            title="Solution Open Source"                
+            desc="<p>Créée avec <a href=\" \">Eclipse Sirius</a>, Information System Designer est une solution open source qui peut facilement être adaptée ou étendue pour correspondre plus précisément à vos besoins :</p><ul><li>génération pour d'autres langages ou frameworks, ajout d'autres langages visuels, basés sur des notations graphiques différentes,</li><li>intégration avec vos propres plug-ins,</li><li>modification du workflow pour supporter votre processus de développement.</li></ul>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-1"
+            img_src="images/logos/logo-github.png"
+            img_title="Github"
+        %}
+    </div>
+</section>
+
+<section  class="bg_lightest_grey">
+    <div class="container">
+        {% include block_text_image.html
+            txt_order="order-1"
+            title="Pourquoi pas UML ?"                
+            desc="<p>Plutôt que le langage de modélisation UML (Unified Modeling Language), Information System Designer utilise un DSL (Domain Specific Language) dédié aux différents besoins auxquels répond l’atelier.</p><p>L’utilisation d’UML aurait nécessité d’étendre ce langage (définition de stéréotypes, de tagged-values et de règles de modélisation) qui complexifient l’activité d’analyse et de conception.</p><p>Au contraire, le DSL proposé par Information System Designer a été conçu spécialement pour cet atelier pour faciliter l’expression de chacun des domaines d’une application (interactions, services, bases de données, IHM, etc).</p>"
+        
+            lnk_txt=""
+            lnk_href=""
+            lnk_target=""
+            lnk_icon=""
+
+            img_order="order-2"
+            img_src="images/illustrations/no-uml.png"
+            img_title="No UML"
+        %}
+    </div>
+</section>
