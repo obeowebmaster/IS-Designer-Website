@@ -200,6 +200,7 @@ section {
   font-weight: 500;
   border-bottom: 4px solid transparent;
   padding-bottom: 4px;
+  padding-top: 0;
   -webkit-transition: .1s all;
   -o-transition: .1s all;
   transition: .1s all;
