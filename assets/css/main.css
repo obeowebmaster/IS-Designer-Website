@@ -20,6 +20,9 @@
 .card.banner a:hover {
     color: #FBB800;
 }
+#intro .col-md-7 img {
+    width: 100%;
+  }
 
 @media only screen and (max-width: 1199px){
 body {
